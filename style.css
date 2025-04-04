@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #000;
   line-height: 1.6;
@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 0px solid #eee;
 }
 
 .navbar {
@@ -77,18 +77,34 @@ body {
 .hero-text h1,
 .hero-text h2,
 .hero-text h3 {
+  font-weight: normal;
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.hero-text span {
-  font-weight: bold;
+.bold {
+  font-weight: 700;
 }
 
-.hero-text p {
+.outline {
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+.description {
+  color: #666;
+  margin-top: 30px;
+  font-size: 1rem;
+  max-width: 600px;
+}
+/* .hero-text span {
+  font-weight: bold;
+} */
+
+/* .hero-text p {
   margin: 20px 0;
   line-height: 1.6;
-}
+} */
 
 .social-icons {
   display: flex;
@@ -207,12 +223,52 @@ body {
   font-weight: bold;
 }
 
-.skills-grid {
+/* .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
  
   margin: 0 auto;
+} */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 карточки */
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 14px;
+  }
+
+  .skill-card img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
+  }
 }
 
 .skill-card {
