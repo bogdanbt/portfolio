@@ -46,10 +46,26 @@ body {
   list-style: none;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .navbar ul {
+    gap: 20px;
+  }
+}
+
+/* .navbar a {
+  text-decoration: none;
+  color: #fff;
+} */
 
 .navbar a {
   text-decoration: none;
   color: #fff;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 0.85rem;
+  }
 }
 
 /* .linkedin-link {
@@ -212,13 +228,19 @@ body {
 }
 
 .skills {
-  padding: 80px 0px;
+  padding: 80px 0;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 0 0 80px 0;
+  }
 }
 
 .skills h2 {
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .skills h2 span {
