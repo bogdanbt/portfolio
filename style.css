@@ -596,3 +596,33 @@ body {
   font-size: 0.85rem;
   padding: 30px 0;
 }
+
+.btn-custom {
+  display: inline-block;
+  background-color: #e91e63;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #c2185b;
+}
+
+.btn-github-custom {
+  display: inline-block;
+  background-color: #d66e91;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.please-note {
+  color: white;
+}
